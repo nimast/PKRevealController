@@ -1438,12 +1438,6 @@ NSString * const PKRevealControllerRecognizesResetTapOnFrontViewKey = @"PKReveal
         && [self.rightViewController shouldAutorotateToInterfaceOrientation:toInterfaceOrientation];
 }
 
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
-                                         duration:(NSTimeInterval)duration
-{
-    [self.frontViewContainer refreshShadowWithAnimationDuration:duration];
-}
-
 #pragma mark - Memory Management
 
 - (void)dealloc
